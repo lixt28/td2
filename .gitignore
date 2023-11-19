@@ -1,0 +1,6 @@
+*.o
+*.d
+bin
+build
+.vscode
+app
