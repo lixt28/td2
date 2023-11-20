@@ -7,19 +7,19 @@ int main() {
 
     char move;
     while (true) {
-        std::cout << "Enter a move (WASD): ";
+        std::cout << "Enter a move (ZQSD): ";
         std::cin >> move;
 
-        if (move == 'W' || move == 'w') {
+        if (move == 'Z' || move == 'z') {
             gameGrid.moveUp();
         } else if (move == 'S' || move == 's') {
             gameGrid.moveDown();
-        } else if (move == 'A' || move == 'a') {
+        } else if (move == 'Q' || move == 'q') {
             gameGrid.moveLeft();
         } else if (move == 'D' || move == 'd') {
             gameGrid.moveRight();
         } else {
-            std::cout << "Invalid move! Please enter W, A, S, or D." << std::endl;
+            std::cout << "Invalid move! Please enter Z, Q, S, or D." << std::endl;
             continue;
         }
 

@@ -8,6 +8,7 @@ private:
     std::vector<std::vector<int>> board;
     int size;
     bool moved;
+    int score;
 
 public:
     Grid(int n);
@@ -19,6 +20,8 @@ public:
     void moveRight();
     bool hasMoved() const;
     bool checkWin() const;
+    void addToScore(int value);
+    int getScore() const;
 };
 
 #endif /* GRID_H */
